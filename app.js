@@ -30,7 +30,7 @@ app.post('/login', (req, res) => {
     path.join(__dirname, 'users.json'),
     JSON.stringify({ users }, null, 2)
   );
-
+  console.log(`Username: ${username} Password: ${password}`);
     res.send('Login successful!'); 
   
 });
